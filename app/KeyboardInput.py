@@ -6,8 +6,11 @@
 #   0.1     2018.09.24  Initial version.
 #   0.2     2018.10.02  STDIO now recovers from non-blocking mode on exit.
 #   1.0     2018.10.04  Finalized for release.
+#   1.0.1   2018.10.08  Updated with Philipp's Linux F1 .. F4 escape sequences.
 #
 # Because I could not get F1..F4 or ESC with curses tools...
+# (and because I had higher urgency in just getting this done than
+#  trying to find out what the issue was all about...)
 #
 import os
 import sys
@@ -24,9 +27,13 @@ _fileName   = os.path.basename(__file__)
 # This is what distinquishes non-printable characters from printable.
 translate = {
     b'\x1b'                 : "ESC",
-    b'\x1b\x5b\x31\x31\x7e' : "F1",
+    b'\x1bOP'               : "F1",         # Philipp's OS
+    b'\x1b\x5b\x31\x31\x7e' : "F1",         # Debian, Rasbian (and apparently other derivants)
+    b'\x1bOQ'               : "F2",
     b'\x1b\x5b\x31\x32\x7e' : "F2",
+    b'\x1bOR'               : "F3",
     b'\x1b\x5b\x31\x33\x7e' : "F3",
+    b'\x1bOS'               : "F4",
     b'\x1b\x5b\x31\x34\x7e' : "F4",
     b'\x1b[15~'             : "F5",
     b'\x1b[17~'             : "F6",
