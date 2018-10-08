@@ -10,6 +10,7 @@
 #   0.5     2018.10.01  Serial timeouts implemented.
 #   0.6     2018.10.02  Start-up screen remodeled.
 #   1.0     2018.10.04  Finalized.
+#   1.0.1   2018.10.08  Philipp's Linux distribution specific F1 .. F4 escapes.
 #
 import os
 import sys
@@ -35,7 +36,7 @@ from Device             import Device
 from IntervalScheduler  import IntervalScheduler
 from startup            import startup_screen
 # PEP 396 -- Module Version Numbers https://www.python.org/dev/peps/pep-0396/
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__  = "Jani Tammi <jasata@utu.fi>"
 VERSION = __version__
 HEADER  = """
