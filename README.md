@@ -1,5 +1,5 @@
 # Foresail-1 PATE Bias Board evaluation software
-_Version 1.0 / 2018-10-04 / Jani Tammi <jasata@utu.fi>_
+_Version 1.0 / 2018-10-04 / JTa_
 
 Sole purpose of this software is to allow Bias Board developer to
 periodically retrieve data from evaluation/housekeeping MCU in the
