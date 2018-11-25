@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 # PATE Bias Board Evaluation Software (pbbes) 2018
 #
-# Device.py - Jani Tammi <jasata@utu.fi>
+# startup.py - Jani Tammi <jasata@utu.fi>
 #   0.1     2018.10.01  Initial version.
 #   0.2     2018.10.02  Nearly completed (missing 'RRR' handling)
 #   1.0     2018.10.04  Implemented 'RRR' calibration. Finalized.
+#   1.0     2018.11.25  Fixed script name in this header.
 #
 #       Start-up screen that allows the operator to enter a free-form string
 #       'label' (to be writting in the CSV header).
